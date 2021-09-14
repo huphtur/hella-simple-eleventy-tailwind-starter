@@ -2,8 +2,8 @@
   "name": "hella-simple-eleventy-tailwind-starter",
   "description": "Hella Simple Eleventy + Tailwind Starter",
   "scripts": {
-    "dev": "rm -rf _site && eleventy --serve --config=eleventy.config.js & NODE_ENV=development postcss tailwind.css --o src/_includes/output.css --watch",
-    "build": "rm -rf _site && NODE_ENV=production postcss tailwind.css --o src/_includes/output.css && ELEVENTY_ENV=production eleventy --config=eleventy.config.js"
+    "dev": "rm -rf _site && eleventy --serve --config=eleventy.config.js & tailwindcss -i ./tailwind.css -o ./src/_includes/output.css --watch",
+    "build": "rm -rf _site && NODE_ENV=production tailwindcss -i ./tailwind.css -o ./src/_includes/output.css --minify && ELEVENTY_ENV=production eleventy --config=eleventy.config.js"
   },
   "browserslist": [
     "> 1%",
@@ -12,9 +12,7 @@
   ],
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
-    "autoprefixer": "^10.2.5",
-    "postcss": "^8.2.10",
-    "postcss-cli": "^8.3.1",
-    "tailwindcss": "^2.1.1"
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.15"
   }
 }
