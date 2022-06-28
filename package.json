@@ -2,17 +2,15 @@
   "name": "hella-simple-eleventy-tailwind-starter",
   "description": "Hella Simple Eleventy + Tailwind Starter",
   "scripts": {
-    "dev": "rm -rf _site && eleventy --serve --config=eleventy.config.js & tailwindcss -i ./tailwind.css -o ./src/_includes/output.css --watch",
-    "build": "rm -rf _site && NODE_ENV=production tailwindcss -i ./tailwind.css -o ./src/_includes/output.css --minify && ELEVENTY_ENV=production eleventy --config=eleventy.config.js"
+    "serve": "rm -rf _site && npx @11ty/eleventy --serve & npx tailwindcss -i ./src/tailwind.css -o ./_site/styles.css --watch",
+    "build": "rm -rf _site && npx @11ty/eleventy & npx tailwindcss -i ./src/tailwind.css -o ./_site/styles.css --minify"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ],
+  "keywords": [],
+  "author": "Marcel Appelman",
+  "license": "MIT",
+  "browserslist": "defaults, not ie <= 11",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
-    "postcss": "^8.3.6",
-    "tailwindcss": "^2.2.15"
+    "@11ty/eleventy": "^1.0.1",
+    "tailwindcss": "^3.1.4"
   }
 }

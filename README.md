@@ -1,3 +1,9 @@
-Hella Simple Eleventy + Tailwind Starter
+# Hella Simple Eleventy + Tailwind Starter
 
-Tailwind is handled by Tailwind CLI, the output is dumped in Eleventy's `_include` folder. Combine `addWatchTarget` with `addPassthroughCopy` and Eleventy will handle your dev site refresh whenever you make an update to Tailwind.
+Just 2 dependencies, 2 npm scripts, and 1 Tailwind UI freebie to get you started.
+
+## Usage
+- Clone this repo
+- Run `npm i` to install the dependencies
+- For development run `npm run serve` and point your browser to http://localhost:8080/
+- For production run `npm run build` 

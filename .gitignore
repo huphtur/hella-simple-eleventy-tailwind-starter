@@ -3,4 +3,3 @@ _site/
 .DS_Store
 node_modules/
 package-lock.json
-src/_includes/output.css
