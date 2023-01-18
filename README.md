@@ -1,4 +1,4 @@
-# Hella Simple Eleventy + Tailwind Starter
+# Hella Simple Eleventy + Tailwind CSS Starter
 
 Just 2 dependencies, 2 npm scripts, and 1 Tailwind UI freebie to get you started.
 
