@@ -2,6 +2,9 @@
 
 Just 2 dependencies, 2 npm scripts, and 1 Tailwind UI freebie to get you started.
 
+## Preview
+https://hella-simple-eleventy-tailwindcss.netlify.app/
+
 ## Usage
 - Clone this repo
 - Run `npm i` to install the dependencies
