@@ -1,6 +1,7 @@
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addWatchTarget('./tailwind.config.js');
-  eleventyConfig.addWatchTarget('./src/tailwind.css');
+  eleventyConfig.setServerOptions({
+    watch: ['_site/**/*.css'],
+  });
 
   return {
     dir: {
