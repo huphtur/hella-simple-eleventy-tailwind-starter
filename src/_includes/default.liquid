@@ -1,20 +1,13 @@
 <!DOCTYPE html>
 <html class="overflow-y-scroll" lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
-  <meta name="description" content="{% if description %}{{ description }}{% else %}Your site description{% endif %}">
-  <title>{% if title %}{{ title }}{% else %}Your site title{% endif %}</title>
-
-  <link rel="stylesheet" href="/styles.css">
-
-</head>
-
-<body>
-
-  {{ content }}
-
-</body>
-
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
+    <meta name="description" content="{% if description %}{{ description }}{% else %}Your site description{% endif %}" />
+    <title>{% if title %}{{ title }}{% else %}Your site title{% endif %}</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    {{ content }}
+  </body>
 </html>
