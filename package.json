@@ -2,8 +2,8 @@
   "name": "hella-simple-eleventy-tailwind-starter",
   "description": "Hella Simple Eleventy + Tailwind Starter",
   "scripts": {
-    "serve": "rm -rf _site && npx @11ty/eleventy --serve --quiet & npx tailwindcss -i ./src/tailwind.css -o ./_site/styles.css --watch",
-    "build": "rm -rf _site && ELEVENTY_ENV=production npx @11ty/eleventy && npx tailwindcss -i ./src/tailwind.css -o ./_site/styles.css --minify"
+    "serve": "rm -rf _site && npx @11ty/eleventy --serve --quiet & npx @tailwindcss/cli@next -i ./src/styles.css -o ./_site/styles.css --watch",
+    "build": "rm -rf _site && ELEVENTY_ENV=production npx @11ty/eleventy && npx @tailwindcss/cli@next -i ./src/styles.css -o ./_site/styles.css --minify"
   },
   "keywords": [
     "eleventy",
@@ -16,6 +16,7 @@
   "browserslist": "defaults, not ie <= 11",
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "tailwindcss": "^3.4.14"
+    "@tailwindcss/cli": "^4.0.0",
+    "tailwindcss": "^4.0.0"
   }
 }
