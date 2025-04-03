@@ -16,7 +16,7 @@
   "browserslist": "defaults, not ie <= 11",
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "@tailwindcss/cli": "^4.1.0",
-    "tailwindcss": "^4.1.0"
+    "@tailwindcss/cli": "^4.1.2",
+    "tailwindcss": "^4.1.2"
   }
 }
